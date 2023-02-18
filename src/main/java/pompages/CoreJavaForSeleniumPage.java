@@ -8,7 +8,7 @@ import org.openqa.selenium.support.PageFactory;
 public class CoreJavaForSeleniumPage 
 {
 //Declaration
-	@FindBy(xpath="//he[@class='list_title']") private WebElement PageHeader;
+	@FindBy(xpath="//h2[@class='list_title']") private WebElement PageHeader;
 	@FindBy(xpath="//a[@title='Core Java For Selenium Training']") private WebElement coreJavaForSeleniumLink;
 	
 	

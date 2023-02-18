@@ -12,7 +12,7 @@ public class CoreJavaVideoPage
 	@FindBy(xpath="//h1[text()='Core Java For Selenium Training']") private WebElement pageHeader;
 	@FindBy(xpath="//button[@aria-label='Play']") private WebElement playButton;
 	@FindBy(xpath="//button[@aria-label='Pause']") private WebElement pauseButton;
-	@FindBy() private WebElement addToWishListTab;
+	@FindBy(xpath="//span[contains(.,'Add To Wishlist')]") private WebElement addToWishListTab;
 	
 //Initialization 
 public 	CoreJavaVideoPage(WebDriver driver) 
