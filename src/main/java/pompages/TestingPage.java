@@ -1,0 +1,41 @@
+package pompages;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
+public class TestingPage 
+{
+//Declaration
+	@FindBy(xpath="//h1[text()='Testing']") private WebElement pageHeader;
+	@FindBy(id="Selenium Training") private WebElement seleniumImage;
+	@FindBy(id="cartArea") private WebElement cartArea;
+	@FindBy(xpath="//ul[@class='list-socialicons']/descendant::i[@class='fa fa-facebook']") private WebElement facebookIcon;
+	
+	
+//Initialization
+public TestingPage(WebDriver driver) {
+	PageFactory.initElements(driver, this);
+}
+
+public String getPageHeader() {
+	return pageHeader.getText();
+}
+public WebElement getSeleniumImage() {
+	return seleniumImage;
+}
+public WebElement getCartArea() {
+	return cartArea;
+}
+public WebElement getFacebookIcon() {
+	return facebookIcon;
+	
+}
+public void clickFacebookIcon() {
+	facebookIcon.click();
+}
+
+
+
+}
